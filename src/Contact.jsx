@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect, React } from "react";
 // import "./styles.css";
-import Card from "./Card";
+
 import { useParams } from "react-router-dom";
 
 export default function Contact() {
@@ -17,7 +17,7 @@ export default function Contact() {
         
         setContact(response.data);
       });
-  }, []);
+  }, [id]);
 
   
   
